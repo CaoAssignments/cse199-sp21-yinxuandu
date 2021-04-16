@@ -7,7 +7,6 @@ int n;
 int a[505][505];
 int val[505]; // minimum value of the current width
 int sub[505]; // value >=100 from sub[i] to i; -1 if current value <100
-//int lst[505]; // lst[i] is the index of last 100 appear i
 long long ans;
 
 int main() {
@@ -39,40 +38,14 @@ int main() {
                 }
             }
 
-            // debugging
- //           cout << "lo=" << lo << "\t" << "up=" << up << endl;
-  //          for (int j = 0; j < n; j++) cout << sub[j] << " ";
-
             long long tmp = 0;
             int lst = -1; // the index of last 100 by far
             for (int j = 0; j < n; j++) {
                 if (val[j] == 100) lst = j;
                 if (lst != -1 && sub[j] != -1 && sub[j] <= lst) {
                     tmp += (long long)(lst - sub[j] + 1);
- //                   cout << "***" << lst << ", " << sub[j] << ", " << j << endl;
                 }
             }
-//            cout << endl << "tmp=" << tmp << endl << endl << endl;
-/*
-            long long tmp = 0; //
-            int k = 0; // iterator
-            for (int j = 0; j < n; j++) {
-                if (k >= n) break;
-                if (val[j] != 100) continue;
-
-                if (k < j) k = j;
-                while (k < n) {
-                    if (sub[k] > j || sub[k] == -1) break;
-                    if (sub[k] <= j) {
-                        tmp += (long long)(j - sub[k] + 1);
-                        cout << "***" << sub[k] << ", " << j << endl;
-                    }
-                    k++;
-                }
-            }
-            cout << endl << "tmp=" << tmp << endl << endl << endl;
-            //cout << lo << ", " << up << "\t" << tmp << endl;
-*/
             ans += tmp; //
         }
     }
@@ -80,16 +53,8 @@ int main() {
     return 0;
 }
 
-// ./03-green < 0.in > 0.out
-
 // ./03-green < testdata/prob3_silver_feb21/1.in > 1real.out
 // diff 1real.out testdata/prob3_silver_feb21/1.out 
-
-// ./03-green < testdata/prob3_silver_feb21/2.in > 2real.out
-// diff 2real.out testdata/prob3_silver_feb21/2.out 
-
-// ./03-green < testdata/prob3_silver_feb21/10.in > 10real.out
-// diff 10real.out testdata/prob3_silver_feb21/10.out 
 
 /*
 5

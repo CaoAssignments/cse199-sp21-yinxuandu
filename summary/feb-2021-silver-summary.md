@@ -38,3 +38,14 @@ For all K jumps, Bessie can travel to the oldest interval on the first jump and 
 > **Keyword:** 2d-array, Counting
 
 ### Solution
+We want to find all possible sub-grids where 100 is the minimum value inside. As N is no more than 500, we can look for a O(N^3) solution.
+
+One idea is to fix the sub-grid exactly between two rows and try to find the number of valid cases by changing the position of its length.
+
+There are O(N^2) cases for fixing the sub-grid exactly between two rows. For each case, we can iterate through each column j and sum up all sub-grids whose length ends at j.
+
+To do this in O(N) runtime, we maintain val[j] be the minimum value in column j between current two rows. The question then becomes for each column j, to find a smallest k, such that
+- There is at least one 100 in val[k], val[k + 1], ... val[j];
+- All val[k], val[k + 1], ... val[j] are no less than 100.
+
+Then if there is such k for j, the total number of valid sub-grids between current rows and ending with column j is (k - j + 1).
