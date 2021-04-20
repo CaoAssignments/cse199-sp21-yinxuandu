@@ -8,3 +8,10 @@ USACO Feb 2021, Silver Level
 
 - Website [here](http://www.usaco.org/index.php?page=feb21results)
 - Summary [here](summary/feb-2021-silver-summary.md)
+
+## Apr 23 Meeting
+
+USACO Jan 2020, Silver Level
+
+- Website [here](http://www.usaco.org/index.php?page=jan20results)
+- Summary [here](summary/jan-2021-silver-summary.md)
