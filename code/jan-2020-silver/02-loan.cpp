@@ -24,6 +24,8 @@ bool is_valid(long long x) { // optimized
 }
 
 int main() {
+    freopen("loan.in", "r", stdin);
+    freopen("loan.out", "w", stdout);
     scanf("%lld%lld%lld", &n, &k, &m);
     long long ln, rn;
     ln = 0; rn = n + 1; // binary search

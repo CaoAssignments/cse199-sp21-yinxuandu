@@ -14,6 +14,8 @@ int min (int x, int y) {
 }
 
 int main() {
+    freopen("berries.in", "r", stdin);
+    freopen("berries.out", "w", stdout);
     scanf("%d%d", &n, &k);
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);

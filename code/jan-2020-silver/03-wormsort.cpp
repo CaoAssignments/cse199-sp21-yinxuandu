@@ -37,6 +37,8 @@ bool is_valid(long long upp) {
 
 
 int main() {
+    freopen("wormsort.in", "r", stdin);
+    freopen("wormsort.out", "w", stdout);
     scanf("%d%d", &n, &m);
     for (int i = 1; i <= n; i++) scanf("%d", &pos[i]);
     for (int i = 0; i < m; i++) {
