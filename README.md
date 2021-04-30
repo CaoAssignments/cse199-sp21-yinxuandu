@@ -15,3 +15,10 @@ USACO Jan 2020, Silver Level
 
 - Website [here](http://www.usaco.org/index.php?page=jan20results)
 - Summary [here](summary/jan-2021-silver-summary.md)
+
+## Apr 30 Meeting
+
+USACO Dec 2018, Silver Level
+
+- Website [here](http://www.usaco.org/index.php?page=dec18results)
+- Summary [here](summary/dec-2018-silver-summary.md)
