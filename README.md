@@ -22,3 +22,7 @@ USACO Dec 2018, Silver Level
 
 - Website [here](http://www.usaco.org/index.php?page=dec18results)
 - Summary [here](summary/dec-2018-silver-summary.md)
+
+## May 7 Meeting
+
+Stepik writeup, Just Green Enough (Feb 2021, P3) [here](https://stepik.org/lesson/531969/step/5?unit=524874)
